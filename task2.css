@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  transform: scale(1.5); 
+  transition: opacity 1s ease, transform 1.5s ease; 
+  background-size: cover;
+  background-position: center;
+}
+
+.layer-1 {
+  background-image: url('https://images.photowall.com/products/55525/colorful-street-graffiti.jpg?h=699&q=85'); 
+}
+
+.layer-2 {
+  background-image: url('https://grandpalais-immersif.fr/sites/immersif/files/2023-11/LOADING-GPI-Amsterdam_Kraaiennest_Traditional_Style.jpg'); 
+}
+
+.layer-3 {
+  background-image: url('https://osu-wams-blogs-uploads.s3.amazonaws.com/blogs.dir/4144/files/2021/02/Banksy-Midwood-1024x717.jpg');
+}
+
+.layer-4 {
+  background-image: url('https://www.kathmanduandbeyond.com/wp-content/uploads/2019/11/Street-Art-in-Abandoned-Buildings.jpeg');
+}
+
+.layer.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.layer.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.content {
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.intro-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+}
